@@ -85,3 +85,14 @@ int main(){
     }
     return 0; 
 }
+//Ngoài các hàm đã liệt kê phía trên còn một số hàm khác như:
+//pop_back() xóa phần tử cuối cùng(có chỉ số cao nhất) trong vector
+//front()trả về giá trị của phần tử đầu tiên trong vector
+//back()trả về giá trị của phần tử cuối cùng có trong vector
+//Một trong những hàm được sử dụng rát phổ biến nữa là erase();
+//Cú pháp sử dụng vt.erase(it_l,it_r+1)
+//it_l, it_r là 2 iterator biểu diễn đoạn phần tử muốn xóa
+//VD muốn xóa 2 phần tử đầu ta dùng vt.erase(vt.begin(),vt.begin()+2);
+//Xóa 2 phần tử cuối ta dùng vt.erase(vt.end()-2,vt.end());
+//Muốn xóa các phần tử có chỉ số từ 5 đén 10 ta dùng vt.erase(vt.begin()+5,vt.begin()+11);
+//Nói một cách tổng quan thì nếu ta muốn xóa tất cả các phần tử có chỉ số từ l đến r ta dùng vt.(vt.begin()+l,vt.begin()+r+1);
