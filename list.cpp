@@ -8,12 +8,12 @@ using namespace std;
 //list<kiểu dữ liệu>lst(n,p)                    khai báo dslk lst có n phần tử và khởi tạo tất cả các phần tử đó bằng p                       
 
 int main(){
-    list<int>a(5);                                              //khai báo dsik a có 5 phần tử và 5 phàn tử đó đều bằng 0;
+    list<int>a(5);                                              //khai báo dsik a có 5 phần tử và 5 phàn tử đó đều bằng 0
     for(list<int>::iterator it=a.begin();it!=a.end();it++){     //đối với list chỉ có thể duyệt bằng iterator
         cout<<*it<<" ";
     }                  
     cout<<endl;                    
-    list<int>b(6,5);                                            //khai báo dslk b có 6 phần tử và khởi tạo các phần tử đó bằng 5;
+    list<int>b(6,5);                                            //khai báo dslk b có 6 phần tử và khởi tạo các phần tử đó bằng 5
     for(auto it=b.begin();it!=b.end();it++){                    //có thể dùng auto để khai báo iterator một cách ngắn gọn
         cout<<*it<<" ";
     }
