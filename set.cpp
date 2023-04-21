@@ -20,7 +20,7 @@ int main(){
 		cout<<*it<<" ";
 	}
 	cout<<endl;
-	cout<<a.size()<<endl;										//hàm size() dùng để truy xuất đến số phần tử của set		O(1)
+	cout<<a.size()<<endl;										//hàm size() dùng để truy xuất đến số phần tử của set	O(1)
 	if(!a.empty())cout<<"set a khong rong"<<endl;				//hàm empty() trả về true(1) nếu set rỗng ngược lại trả về false(0)		O(1)
 	set<int,cmp> b;												//có thể khai báo set bằng cách set<int,cmp> với cmp là 1 struct
 	b.insert(4);												//bây giờ set b sẽ có quy luật sắp xếp được viết trong struct cmp(từ lớn tới bé)
