@@ -18,7 +18,7 @@ int main(){
 	for(pair<int, int>x : mp){										//cách duyệt map. Lưu ý:bản chất của map là các cặp pair lên khi khai báo x phải khai báo kiểu pair, có thể thay bằng auto
 		cout<<x.first<<" "<<x.second<<endl;
 	}
-	for(map<int, int>::iterator	it=mp.begin();it!=mp.end();it++){   //cũng có thể sử dụng iterator để duyệt map .
+	for(map<int, int>::iterator	it=mp.begin();it!=mp.end();it++){   //cũng có thể sử dụng iterator để duyệt map
 		cout<<(*it).first<<" "<<(*it).second<<endl;
 	}
 	if(mp.count(3)!=0){												//tìm kiếm key trong map. Lưu ý:chỉ tìm đc key không tìm đc gái trị. 
