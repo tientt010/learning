@@ -32,7 +32,7 @@ int main(){
 		cout<<x<<" ";
 	}
 	cout<<endl;
-	set<int>::iterator it=b.find(4);							//hàm find(x)sẽ trả về iterator trỏ đến phần tử mang giá trị x trong set
+	set<int>::iterator it=b.find(4);							//hàm find(x)sẽ trả về iterator trỏ đến phần tử mang giá trị x trong set	O(log(n))
 	if(it==b.end()){											//trong trường hợp không tồn tại x trong set hàm sẽ trả về s.end()
 		cout<<"khong ton tai 4 trong b"<<endl;
 	}else{
