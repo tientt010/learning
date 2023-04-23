@@ -37,31 +37,6 @@ int main(){
 		cout<<"khong ton tai 4 trong b"<<endl;
 	}else{
 		cout<<"ton tai 4 trong b"<<endl;
-	}	
-	set<int>c;
-	for(int i=1;;i=i*2+1){									
-		c.insert(i);											//1 3 7 15 31 63 127
-		if(c.size()==7)break;
-	}
-	//hàm erase() có tác dụng xóa 1 hoặc nhiều phần tử trong set
-	//để xóa 1 phần tử trong set c ta dùng câu lệnh c.erase(x)		O(log(n))
-	c.erase(7);													//x có thể là 1 giá trị cụ thể set sẽ tìm và xóa phần tử có giá trị =x
-	c.erase(c.begin());											//x cũng có thể là 1 iterator chỉ đến phần tử ta muốn xóa
-	for(int x:c){
-		cout<<x<<" ";											//3 15 31 63 127
-	}
-	cout<<endl;
-	//để xóa nhiều phần tử từ l đến r ta phải tìm đc iterator chỉ đén điểm đầu (l) và điểm cuối +1 (r+1)
-	set<int>::iterator it1=c.begin(),it2=c.begin();				//tạo 2 iterator chỉ vào phần tử đầu tiên trong set
-	advance(it1,1);												//it1 chỉ vào phần tử thứ 2
-	advance(it2,3);												//it2 chỉ vào phần tử thứ 4
-	c.erase(it1,it2);											//xóa tất cả các phần tử từ thứ 2 đến thứ 3
-	for(int x:c){
-		cout<<x<<" ";											//3 63 127
-	}		
-	cout<<endl;
-	it1=c.upper_bound(63);										//upper_bound(x)trả về iterator chỉ đến phần tử nhỏ nhất >x		O(log(n))
-	it2=c.lower_bound(63);										//lower_bound(x)trả về iterator chỉ đến phần tử nhỏ nhất >=x	O(log(n))
-	cout<<*it1<<" "<<*it2<<endl;								//127 63 trong trường hợp k có số thỏa mãn trong set thì trả về end()
+	}					
 	return 0;		
 }
