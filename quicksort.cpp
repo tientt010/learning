@@ -22,7 +22,7 @@ void quicksort2(int a[],int l,int r){
 }
 int partition(int a[],int l,int r){
 	int x=a[l];														//chọn phần tử đầu tiên làm chốt;
-	int i=l-1, j=r+1;												//khởi tạo hai biến đánh giấu giá trị bên trái, phải; 
+	int i=l-1, j=r+1;												//khởi tạo hai biến đánh giấu giá trị bên trái, phải
 	while(1){														//lặp vĩnh viễn
 		do{
 			i++;
